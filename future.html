@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erica Le | E-Portfolio</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #fffaf2, #fffbe8, #ffeef0);
+      color: #000000; /* Black text */
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      background-color: #ffffff; /* White bar */
+      color: #000000; /* Black text */
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      margin: 0;
+      color: #000000; /* Ensures name is black in navbar */
+    }
+    
+    nav a {
+      color: #000000; /* Black text links */
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.2s ease, border-bottom 0.2s ease;
+      padding-bottom: 2px;
+    }
+
+    nav a:hover {
+      color: #800000; /* Maroon hover effect */
+      border-bottom: 2px solid #800000;
+    }
+
+    /* ===== Hero Banner ===== */
+    .hero {
+      position: relative;
+      background-image: url("/images/Banner.png");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay to help text pop */
+    }
+    /* ===== Main Section ===== */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      border-radius: 50%; /* Optional: circular image */
+      border: 4px solid #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Erica Le</h1>
+    <nav>
+      <a href="index.html">Home Page</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience &amp; Learning</a>
+      <a href="future.html">Future Plans</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Future Plans</h1>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <h2 style="text-align:center;">Howdy!</h2>
+    <p>
+      My intended concentration is Management Information Systems. I enjoy working with both technological systems and people in order to reach a desired outcome. I explored a multitude of classes in high school that ranged from learning advanced science concepts to computer science languages to business and accounting principles. As I am currently learning about economics and information systems, I am confident that I have found my passion. I plan to apply to the Mays 4+1 Program specifically for Management Information Systems. I can see myself furthering my education as I have always had a love for learning. I am still exploring what career I want to focus on after I graduate, but I am considering health informatics specialist, computer programmer, and database analyst. <br>
+
+In order to achieve these future plans, I will continue to expand my knowledge in computer programming languages in addition to my basic knowledge of JavaScript and HTML. I will also work hard towards developing my skills of leadership, problem solving, and attention to detail. <br>
+
+To develop my leadership skills, I hope to become a peer leader for Freshman Business Initiative 101 or become a teacher assistant for a course I enjoyed being in. Becoming a peer leader would be a great opportunity to meet new people and gain experience in creating lesson plans and teaching small groups. 
+    </p>
+  </main>
+</body>
+</html>
