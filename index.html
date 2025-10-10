@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(135deg, #ffd6a5, #fdffb6, #ffadad);
+      background: linear-gradient(135deg, #fffaf2, #fffbe8, #ffeef0);
       background-color: #800000; /* Maroon background */
       color: #000000; /* Black text */
     }
@@ -35,24 +35,6 @@
       margin: 0;
       color: #000000; /* Ensures name is black in navbar */
     }
-
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    header h1 {
-      font-size: 1.25rem;
-      letter-spacing: 0.5px;
-      margin: 0;
-    }
     
     nav a {
       color: #000000; /* Black text links */
@@ -68,6 +50,29 @@
       border-bottom: 2px solid #800000;
     }
 
+    /* ===== Hero Banner ===== */
+    .hero {
+      position: relative;
+      background-image: url("images/banner.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: "Erica Le";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay to help text pop */
+    }
     /* ===== Main Section ===== */
     main {
       max-width: 900px;
@@ -107,6 +112,11 @@
       <a href="future.html">Future Plans</a>
     </nav>
   </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Erica Le</h1>
+  </section>
 
   <!-- Main Content -->
   <main>
