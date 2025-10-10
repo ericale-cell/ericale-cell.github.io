@@ -1,6 +1,6 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Erica Le | E-Portfolio</title>
@@ -10,8 +10,9 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #fffaf2, #fffbe8, #ffeef0);
       background-color: #800000; /* Maroon background */
-      color: #ffffff; /* White text */
+      color: #000000; /* Black text */
     }
 
     /* ===== Navigation Bar ===== */
@@ -32,9 +33,9 @@
       font-size: 1.25rem;
       letter-spacing: 0.5px;
       margin: 0;
-      color: #000000; /* Ensures name is black */
+      color: #000000; /* Ensures name is black in navbar */
     }
-
+    
     nav a {
       color: #000000; /* Black text links */
       text-decoration: none;
@@ -49,17 +50,58 @@
       border-bottom: 2px solid #800000;
     }
 
+    /* ===== Hero Banner ===== */
+    .hero {
+      position: relative;
+      background-image: url("images/Banner.png");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay to help text pop */
+    }
     /* ===== Main Section ===== */
     main {
       max-width: 900px;
       margin: 3rem auto;
       padding: 0 1.5rem;
     }
+
+    main h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      border-radius: 50%; /* Optional: circular image */
+      border: 4px solid #ffffff;
+    }
   </style>
 </head>
 
-  
 <body>
+  <!-- Navigation Bar -->
   <header>
     <h1>Erica Le</h1>
     <nav>
@@ -69,9 +111,18 @@
       <a href="future.html">Future Plans</a>
     </nav>
   </header>
-  
-  <h4>About Me</h4>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>About Me</h1>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Biography</h2>
     <p>
       I am very extroverted and enjoy having meaningful conversations with people. I do my best to have a welcoming and positive attitude towards those around me. My friends and family would describe me as joyful and ambitious. I value having compassion for others, regardless if they hold different beliefs or opinions. I find it important to be accepting of diverse groups of people so that I may learn more about new ideas and experiences from them. I gained the value of hard work during my time in high school. This principle was instilled in me at a young age by my parents, and I am very grateful to have received their guidance growing up. As I realized my passion in working with technology and people, I began taking accountability for my own learning and enjoyed exploring my different interests. 
     </p>
+  </main>
+</body>
 </html>
