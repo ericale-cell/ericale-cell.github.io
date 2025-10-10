@@ -49,6 +49,25 @@
       border-bottom: 2px solid #800000;
     }
 
+    /* ===== Split container ===== */
+    .split-container {
+      display: flex;
+      flex-wrap: wrap; /* allows stacking on small screens */
+      max-width: 1000px;
+      margin: 2rem auto;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    .left-side, .right-side {
+      flex: 1; /* take equal space */
+      min-width: 300px; /* prevent too-small columns */
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
     /* ===== Hero Banner ===== */
     .hero {
       position: relative;
@@ -87,7 +106,6 @@
     main p {
       font-size: 1.1rem;
       line-height: 1.6;
-      text-align: center;
     }
 
     img {
@@ -118,7 +136,9 @@
 
   <!-- Main Content -->
   <main>
-    <h2 style="text-align:center;">Howdy!</h2>
+
+    <div class="split-container">
+  <div class="left-side">
     <h2>Coursework</h2>
     <p>
       <b>First Year</b> <br>
@@ -145,7 +165,9 @@
       Statistical Methods for Business <br>
       Professional Development Information Systems Seminar <br>
     </p>
+  </div>
 
+  <div class="right-side">
     <h2>Extracurriculars</h2>
     <p>
       <b>First Year</b> <br>
@@ -167,8 +189,9 @@
     <p>
 This program has provided me with many opportunities to network and speak with professionals and faculty members. By attending panel discussions and speaker presentations, I have received valuable insight and advice on how to be successful during my time here at A&M. In the First Year Seminar course, we are assigned weekly writing assignments in which I develop my ability to reflect on my values and goals. Living in the University Honors Housing Community has been a wonderful experience as I am surrounded with like-minded individuals who encourage me to continuously reach my fullest potential.
     </p>
+  </div>
+</div>
 
-    <img src="images/Portrait.jpeg" alt="Headshot of Erica Le" width="250" height="auto">
   </main>
 </body>
 </html>
