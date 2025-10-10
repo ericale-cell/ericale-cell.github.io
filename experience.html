@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erica Le | E-Portfolio</title>
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #fffaf2, #fffbe8, #ffeef0);
+      color: #000000; /* Black text */
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      background-color: #ffffff; /* White bar */
+      color: #000000; /* Black text */
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      letter-spacing: 0.5px;
+      margin: 0;
+      color: #000000; /* Ensures name is black in navbar */
+    }
+    
+    nav a {
+      color: #000000; /* Black text links */
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.2s ease, border-bottom 0.2s ease;
+      padding-bottom: 2px;
+    }
+
+    nav a:hover {
+      color: #800000; /* Maroon hover effect */
+      border-bottom: 2px solid #800000;
+    }
+
+    /* ===== Hero Banner ===== */
+    .hero {
+      position: relative;
+      background-image: url("/images/Banner.png");
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay to help text pop */
+    }
+    /* ===== Main Section ===== */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    main h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 0;
+    }
+
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 2rem auto;
+      border-radius: 50%; /* Optional: circular image */
+      border: 4px solid #000000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Erica Le</h1>
+    <nav>
+      <a href="index.html">Home Page</a>
+      <a href="about.html">About Me</a>
+      <a href="experience.html">Experience &amp; Learning</a>
+      <a href="future.html">Future Plans</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>Experience & Learning</h1>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <h2 style="text-align:center;">Howdy!</h2>
+    <h2>Coursework</h2>
+    <p>
+      <b>First Year</b> <br>
+      <u></u>Fall 2024:</u> <br>
+      Freshman Business Initiative 101 <br>
+      Fundamentals of Information Systems 210 <br>
+      Principles of Economics 202 <br>
+      State and Local Government 207 <br>
+      Beginning Spanish IFirst Year Seminar 181 <br>
+
+      <u>Spring 2025:</u> <br>
+      Beginning Spanish II <br>
+      Programming Logic and Design 250 <br>
+      Honors-Design Process 101 <br>
+      Principles of Economics 203 <br>
+      Introductory Accounting 229 <br>
+
+      <b>Second Year</b> <br>
+      <u>Fall 2025:</u> <br>
+      Network Communication & Infrastructure <br>
+      Business Systems Analysis & Design <br>
+      Honors-Intro Accounting <br>
+      Business Finance <br>
+      Statistical Methods for Business <br>
+      Professional Development Information Systems Seminar <br>
+    </p>
+
+    <h2>Extracurriculars</h2>
+    <p>
+      <b>First Year</b> <br>
+      <u></u>Fall 2024:</u> <br>
+      Aggie Special Olympics Texas Volunteers <br>
+
+      <u></u>Spring 2024:</u> <br>
+      Aggie Special Olympics Texas Volunteers <br>
+      Association of Information Technology Professionals <br>
+
+      <b>Second Year</b> <br>
+      <u></u>Fall 2025:</u> <br>
+      Association of Information Technology Professionals <br>
+      Aggie Innovators <br>
+      Eco-Reps <br>
+    </p>
+
+    <h2>University Honors Program</h2>
+    <p>
+This program has provided me with many opportunities to network and speak with professionals and faculty members. By attending panel discussions and speaker presentations, I have received valuable insight and advice on how to be successful during my time here at A&M. In the First Year Seminar course, we are assigned weekly writing assignments in which I develop my ability to reflect on my values and goals. Living in the University Honors Housing Community has been a wonderful experience as I am surrounded with like-minded individuals who encourage me to continuously reach my fullest potential.
+    </p>
+
+    <img src="images/Portrait.jpeg" alt="Headshot of Erica Le" width="250" height="auto">
+  </main>
+</body>
+</html>
